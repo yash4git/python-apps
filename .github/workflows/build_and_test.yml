@@ -19,6 +19,8 @@ jobs:
         python-version: '3.x'
     - name: Install Dependencies
       run: |
+        echo "PWD IS"
+        echo $PWD
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         echo "Dependencies Installed Successfully."
